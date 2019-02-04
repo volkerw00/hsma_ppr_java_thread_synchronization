@@ -1,0 +1,53 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - CountDownLatchTest",
+			"request": "launch",
+			"mainClass": "de.volkerw.hsma.ppr.book.latch.CountDownLatchTest",
+			"projectName": "ppr-book"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - WaitNotify",
+			"request": "launch",
+			"mainClass": "de.volkerw.hsma.ppr.book.thread.WaitNotify",
+			"projectName": "ppr-book"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Threading",
+			"request": "launch",
+			"mainClass": "de.volkerw.hsma.ppr.book.thread.Threading",
+			"projectName": "ppr-book"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Queue",
+			"request": "launch",
+			"mainClass": "de.volkerw.hsma.ppr.book.queue.Queue",
+			"projectName": "ppr-book"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Exchanging",
+			"request": "launch",
+			"mainClass": "de.volkerw.hsma.ppr.book.exchanger.Exchanging",
+			"projectName": "ppr-book"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Future",
+			"request": "launch",
+			"mainClass": "de.volkerw.hsma.ppr.book.future.Future",
+			"projectName": "ppr-book"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - ConditionWaiting",
+			"request": "launch",
+			"mainClass": "de.volkerw.hsma.ppr.book.lock.ConditionWaiting",
+			"projectName": "ppr-book"
+		}
+	]
+}
