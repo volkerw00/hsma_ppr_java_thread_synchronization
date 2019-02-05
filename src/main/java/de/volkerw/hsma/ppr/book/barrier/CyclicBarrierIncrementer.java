@@ -10,12 +10,13 @@ import java.util.stream.IntStream;
 class CyclicBarrierIncrementer
 {
 	static CyclicBarrier barrier;
+	static boolean	done	= false;
 
 	static AtomicInteger aInt = new AtomicInteger();
 
 	static class Worker implements Runnable
 	{
-		private int number;
+		private int										number;
 
 		public Worker(int number)
 		{
@@ -25,28 +26,34 @@ class CyclicBarrierIncrementer
 		@Override
 		public void run()
 		{
-			System.out.printf("Worker %s: %s%n", number, 
-																					 aInt.incrementAndGet());
-			try
+			while (!done)
 			{
-				barrier.await();
-				System.out.printf(
-											"Barrier passed. Worker %s free.%n", number);
-			}
-			catch (InterruptedException | BrokenBarrierException e)
-			{
-				return;
+				System.out.printf("Worker %s: %s%n",
+				                  number,
+				                  aInt.incrementAndGet());
+				try
+				{
+					barrier.await();
+					System.out.printf(
+					                  "Barrier passed. Worker %s free.%n",
+					                  number);
+				}
+				catch (InterruptedException | BrokenBarrierException e)
+				{
+					return;
+				}
 			}
 		}
 	}
 
-	public static void main(String[] args) 
-																		throws InterruptedException
+	public static void main(String[] args)
+	    throws InterruptedException
 	{
 		List<Thread> threads = new ArrayList<>();
 
 		barrier = new CyclicBarrier(5, () -> {
 			System.out.println(aInt.get());
+			done = true;
 		});
 
 		IntStream.of(1, 2, 3, 4, 5).forEach(i -> {

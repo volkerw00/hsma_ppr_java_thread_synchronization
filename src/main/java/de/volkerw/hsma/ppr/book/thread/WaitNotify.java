@@ -19,7 +19,7 @@ class WaitNotify
 				synchronized (lock)
 				{
 					while (slot == null)
-					  lock.wait();
+						lock.wait();
 
 					Object o = slot;
 					slot = null;
