@@ -1,4 +1,6 @@
 rootProject.name = 'ppr-exercises'
 
 include 'semaphore'
+include 'semaphore_solution'
 include 'gate'
+include 'gate_solution'
