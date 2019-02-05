@@ -1,0 +1,60 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExpensiveComputationCountDownLatch",
+            "request": "launch",
+            "mainClass": "de.volkrw00.hsma.ppr.ExpensiveComputationCountDownLatch",
+            "projectName": "gate"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExpensiveComputationFutureTask",
+            "request": "launch",
+            "mainClass": "de.volkrw00.hsma.ppr.ExpensiveComputationFutureTask",
+            "projectName": "gate"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExpensiveComputation",
+            "request": "launch",
+            "mainClass": "de.volkrw00.hsma.ppr.ExpensiveComputation",
+            "projectName": "gate"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CountingSemaphore_jdk",
+            "request": "launch",
+            "mainClass": "de.volkerw00.hsma.ppr.CountingSemaphore_jdk",
+            "projectName": "semaphore"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CountingSemaphore_solution",
+            "request": "launch",
+            "mainClass": "de.volkerw00.hsma.ppr.CountingSemaphore_solution",
+            "projectName": "semaphore"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CountingSemaphore",
+            "request": "launch",
+            "mainClass": "de.volkerw00.hsma.ppr.CountingSemaphore",
+            "projectName": "semaphore"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ForkJoinMergeSort",
+            "request": "launch",
+            "mainClass": "de.volkerw00.hsma.ppr.ForkJoinMergeSort",
+            "projectName": "fork-join_merge-sort"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MergeSort",
+            "request": "launch",
+            "mainClass": "de.volkerw00.hsma.ppr.MergeSort",
+            "projectName": "fork-join_merge-sort"
+        }
+    ]
+}

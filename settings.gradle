@@ -1,0 +1,4 @@
+rootProject.name = 'ppr-exercises'
+
+include 'semaphore'
+include 'gate'
